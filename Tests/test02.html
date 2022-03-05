@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacina</title>
+    <style>
+        body{
+            background-color: rgb(89, 142, 223);
+            font: normal 24pt 'Cambria';
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(252, 182, 53);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você já pode receber a vacina?</h1>
+    <script>
+        var nome = prompt("Qual é o seu nome?")
+        var idade = prompt("Qual a sua idade?")
+        var vacinas = prompt("Há vacinas disponíveis na sua cidade?")
+        var vacinação = (idade >= 80) && vacinas == 'Sim' ? document.write(`<strong>${nome}</strong>, você <strong>já pode receber</strong> a sua dose da  vacina!`) : document.write(`<strong>${nome}</strong>, você ainda <strong>precisa esperar um pouco</strong> para receber a sua dose da vacina!`)
+    </script>
+</body>
+</html>

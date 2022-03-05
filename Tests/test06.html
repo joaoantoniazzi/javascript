@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você É Um Estrangeiro?</title>
+    <style>
+        body{
+            background: rgb(82, 4, 4);
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+        input{
+            font-size: 16pt;
+        }
+        div#resultadotxt{
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é um Estrangeiro?</h1>
+    Eu moro no país <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = "resultadotxt"></div>
+    <script>
+        function verificar() {
+            var paístxt = window.document.querySelector('input#txtpaís')
+            var país = String(paístxt.value)
+            var resultado = window.document.querySelector('div#resultadotxt')
+            if (país == 'Brasil') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else if (país == 'Brazil') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else if (país == 'brasil') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else if (país == 'brazil') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else if (país == 'BRASIL') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else if (país == 'BRAZIL') {
+                resultado.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else {
+                resultado.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
