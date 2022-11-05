@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(117, 153, 231);
+    background-color: #F98607;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,27 +20,25 @@ main {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
 }
 
-h1 {
-    font-size: 2.5em;
+main > article > div > p#anodn {
+    display: inline;
 }
 
-#msg {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.2em;
+button {
+    background-color: #F23C05;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
 }
 
-img {
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    margin: auto auto 10px auto;
+button:hover {
+    text-decoration: underline;
 }
 
-#bomdtn {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 20px;
+section {
+
 }
 
 footer {

@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <main>
         <article>
-            <div id="msg"></div>
-            <div id="foto">
-                <img id="imagem" src="images/manha.jpg" alt="Foto do dia">
+            <div>
+                <p id="anodn">Ano de nascimento: </p>
+                <input type="number" id="anodn">
             </div>
-            <div id="bomdtn"></div>
+            <div>
+                <p>Sexo:</p>
+            </div>
+            <button onclick="carregar()">Verificar</button>
         </article>
     </main>
     <footer>
-        <p>&copy; <a href="https://cursoemvideo.com" target="_blank" rel="external">CursoemVídeo</a></p>
+        <p>&copy; <a href="https://cursoemvideo.com" rel="external" target="_blank">CursoemVídeo</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
