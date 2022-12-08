@@ -20,18 +20,29 @@ main {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
 }
 
-button {
+#botão {
     background-color: #F23C05;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     padding: 0.5em;
+    transform: translate(-50%);
+    margin-left: 50%;
 }
 
+#botão:hover {
+    background-color: #f7a54e;
+    color: #F23C05;
+}
 
-section {
-
+#foto {
+    display: block;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+    transform: translate(-50%);
+    margin-left: 50%;
 }
 
 footer {
