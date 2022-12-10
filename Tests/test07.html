@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só zoando</title>
+</head>
+<body>
+    <h1>Só testando...</h1>
+    <h1>Formulário de base</h1>
+    <p>Você tem mais de 18 anos?</p>
+    <input type="radio" name="idade" id="sim" checked>
+    <label for="sim">Sim</label>
+    <input type="radio" name="idade" id="não">
+    <label for="não">Não</label>
+    <p>Você tem carteira de motorista?</p>
+    <input type="radio" name="cart" id="sim" checked>
+    <label for="sim">Sim</label>
+    <input type="radio" name="cart" id="não">
+    <label for="não">Não</label>
+    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+    <p id="res"></p>
+    <h1>Joguinho</h1>
+    <p>Você é um idiota?</p>
+    <input type="button" value="Sim" onclick="ehidiota()">
+    <input type="button" value="Não" onclick="seachaesperto()">
+    <p id="ehburro"></p>
+
+    <script>
+        document.body.style.background='lightgray'
+        var sj = document.createElement('img')
+        sj.setAttribute('src', 'https://saojoseerechim.com.br/wp-content/themes/twentysixteen/assets/images/logo.png')
+        var titulo = document.getElementsByTagName('h1')[0]
+        titulo.appendChild(sj)
+        sj.setAttribute('style', 'display: block;')
+
+        var idade = document.getElementsByName('idade')
+        var cart = document.getElementsByName('cart')
+        var res = document.getElementById('res')
+
+        function verificar() {
+            if ((idade[0].checked && cart[0].checked) || (idade[1].checked && cart[1].checked)) {
+                res.innerText='Tudo certo!'
+                document.body.style.background= 'lightblue'
+            } else {
+                res.innerText='Algo de errado não está certo!'
+                document.body.style.background= 'red'
+            }
+        }
+
+        var ehburro = document.getElementById('ehburro')
+
+        function ehidiota() {
+            ehburro.innerText='Eu sabia!'
+        }
+        
+        function seachaesperto() {
+            var btn = document.getElementsByTagName('input')[6]
+            btn.style.background='transparent'
+            btn.style.border='0'
+            btn.style.color='transparent'
+            ehburro.innerText='Tem certeza? Eu discordo. Você não é um idiota?'
+        }
+
+    </script>
+</body>
+</html>
