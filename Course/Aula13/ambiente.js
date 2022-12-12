@@ -19,4 +19,4 @@ x = 1
 do {
     console.log(`Passo ${x}`)
     x++
-} while
+} while (x <= 6)
